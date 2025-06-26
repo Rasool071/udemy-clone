@@ -17,6 +17,7 @@ body {
     top: 0px;
     background-color: white;
     z-index: 1;
+   
 }
 
 .navbar-s1__title {
@@ -50,6 +51,12 @@ body {
     gap: 20px;
     font-weight: 600;
 }
+
+.navbar-s4{
+    display: none;
+}
+
+
 
 .mylearning{
     position: relative;
@@ -151,7 +158,14 @@ body {
 
 
 .course-card {
-    width:400px;
+   flex-grow: 1;
+   flex-basis: 20%;
+   margin: 5px;
+}
+
+.course-card:hover{
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .course-card img {
@@ -166,6 +180,14 @@ body {
 .topics_title {
     display: flex;
     flex-wrap: wrap;
+
+}
+
+.topics_title p:hover{
+    transition: 1s;
+    background-color: #A335F1;
+    color: white;
+    cursor: pointer;
 }
 
 .topics_title p {
@@ -215,4 +237,36 @@ body {
     display: flex ;
     align-items: center ;
     justify-content: space-between;
+}
+
+@media  screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+
+@media  screen and (max-width:600px) {
+
+    .course-card{
+        flex-basis: 40%;
+    }
+
+    .navbar-s2,.navbar-s3{
+        display: none;
+    }
+
+    .navbar-s4{
+        display: block;
+        margin-top: 10px;
+
+    }
+
+    .navbar-1{
+        display: none;
+
+    }
+
+   
+
+    
 }
