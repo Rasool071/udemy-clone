@@ -163,14 +163,16 @@ body {
    margin: 5px;
 }
 
-.course-card:hover{
-    transform: scale(1.2);
-    transition: 1s;
-}
+
 
 .course-card img {
     height: 60%;
     width: 100%;
+}
+
+.course-card img:hover{
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .topics {
